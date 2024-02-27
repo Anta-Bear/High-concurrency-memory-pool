@@ -60,6 +60,7 @@ inline static void SystemFree(void* ptr)
 #endif
 }
 
+// 返回自由链表的下一个节点
 static void*& NextObj(void* obj)
 {
 	return *(void**)obj;
